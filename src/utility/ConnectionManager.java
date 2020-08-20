@@ -15,11 +15,9 @@ public class ConnectionManager{
 	  con =	DriverManager.getConnection(prop.getProperty("url"),prop.getProperty("username"),prop.getProperty("password"));
 	 
 		}catch (Exception e) {
-				System.out.println(e.getMessage());
-				
+				System.out.println(e.getMessage());		
 		}
 		return con;
-	
 	}
 	public static Properties loadPropertiesFile() throws Exception {
 		Properties prop = new Properties();	

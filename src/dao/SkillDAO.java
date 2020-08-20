@@ -30,8 +30,6 @@ public class SkillDAO{
 		
 		while(rs.next()) {
 		skill = new Skill(null, insert_skills);
-		//	System.out.print(rs.getLong("id")+"\t");
-		//	System.out.println(rs.getString("name"));
 			Long id= rs.getLong(1);
 			
 			String name= rs.getString(2);		
